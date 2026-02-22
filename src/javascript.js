@@ -13,7 +13,7 @@ function refreshWeather(response) {
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
-  windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
+  windSpeed.innerHTML = `${response.data.wind.speed} km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
   timeElement.innerHTML = formatDate(date);
 
@@ -74,7 +74,7 @@ function displayForecast(response) {
                   <strong>${Math.round(day.temperature.maximum)}°</strong>
                 </div>
                 <div class="weather-forecast-temperature">
-                ${Math.round(day.temperature.maximum)}°</div>
+                ${Math.round(day.temperature.minimum)}°</div>
               </div>
             </div>`;
     }
