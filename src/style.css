@@ -58,6 +58,7 @@ main {
 }
 .weather-app-details strong {
   color: rgb(182, 18, 146);
+  font-weight: 700;
 }
 .weather-app-container {
   display: flex;
